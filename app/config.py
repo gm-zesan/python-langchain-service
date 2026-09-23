@@ -12,6 +12,6 @@ class LangChainConfig:
 
     LLM_API_KEY: str = os.getenv("LLM_API_KEY") or os.getenv("OPENROUTER_API_KEY") or os.getenv("DEEPSEEK_API_KEY") or "sk-dummy"
     LLM_BASE_URL: str = os.getenv("LLM_BASE_URL") or os.getenv("OPENROUTER_URL") or "https://api.deepseek.com"
-    LLM_MODEL: str = os.getenv("LLM_MODEL") or os.getenv("OPENROUTER_MODEL") or "deepseek-flash"
+    LLM_MODEL: str = os.getenv("LLM_MODEL") or os.getenv("OPENROUTER_MODEL") or "deepseek-chat"
 
 config = LangChainConfig()
